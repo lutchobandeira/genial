@@ -30,13 +30,13 @@ module Genial
     private
 
     def self.parse_response(response)
-      response.parsed_response["buying_rate"].to_f.round(2)
+      response.parsed_response["buying_rate"].to_f
     end
 
     def self.convert_response(response)
       case response.code
       when 200
-        response.parsed_response["result"].to_f.round(2)
+        response.parsed_response["result"].to_f
       when 404
         puts "moeda(s) não encontrada(s)"
       when 400
