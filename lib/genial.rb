@@ -30,7 +30,7 @@ module Genial
     private
 
     def self.parse_response(response)
-      response.parsed_response["buying_rate"].to_f
+      response.parsed_response["selling_rate"].to_f
     end
 
     def self.convert_response(response)
